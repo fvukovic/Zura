@@ -16,7 +16,7 @@ angular.module('starter')
             $scope.$evalAsync();
 
         } else if (window.localStorage.getItem("typeContact") == 3) {
-            $scope.title = "Pošalji pitanje";
+            $scope.title = "Kontakt";
             $scope.$evalAsync();
 
         } 
