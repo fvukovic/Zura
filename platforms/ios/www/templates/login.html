@@ -1,0 +1,15 @@
+<ion-view>
+    <ion-content>
+      <br/><br/>
+      <h1 style="   text-align: center;margin-top:5px" ng-style="{'font-size' : +font + +5 + 'px'} "  class="title-h1" >Prijava</h1>
+      <div  ng-style="{'font-size' : +font  +2 + 'px'} "  class="main-grey" style="height: 100%">
+        Korisničko ime:
+        <input autocapitalize="off" id="email" type="text" style="height: 35px;width: 100%; padding: 0 10px;"/><br/>
+        Lozinka:
+        <input id="lozinka" type="password" style="height: 35px;width: 100%; padding: 0 10px;"/><br/>
+        <a ng-click="login()" class="btn-primary" style="background-color: #cb2d2a"><spane ng-style="{'font-size' : +font  +5 + 'px'} ">Prijavi se</spane></a><br/><br/>
+        <div style="background-color: white" ng-include src="'templates/footer-copyright-eu.html'"></div> 
+      </div>  
+      
+    </ion-content>
+  </ion-view>

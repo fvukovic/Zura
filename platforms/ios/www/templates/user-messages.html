@@ -1,0 +1,19 @@
+<ion-view style="">
+    <ion-content    >
+      <br/><br/>
+      <h1 style="   text-align: center;margin-top:5px" ng-style="{'font-size' : +font + +5 + 'px'} "  class="title-h1" >{{name}}</h1>
+      <div ng-style="{'font-size' : +font  +2 + 'px'} " class="main-grey" style="height: 100%">
+        
+     
+      <br/>
+      Poruka:
+      <textarea id="message" style="height: 250px;width: 100%">
+        
+                  </textarea>
+     
+      <a ng-click="sendMessage()" class="btn-primary">Pošalji</a>
+        <br><br><br><br>     
+      </div> <br><br><br><br>
+       <div style="margin-top:50px;  background:white !important;" ng-include src="'templates/footer-copyright-eu.html'"></div> 
+    </ion-content>
+  </ion-view>

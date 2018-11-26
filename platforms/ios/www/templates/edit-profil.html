@@ -1,0 +1,36 @@
+<ion-view style="">
+  <ion-content>
+    <br/>
+    <br/>
+    <h1 style="   text-align: center;margin-top:5px" ng-style="{'font-size' : +font + +5 + 'px'} " class="title-h1">Postavke profila</h1>
+    <div ng-style="{'font-size' : +font  +2 + 'px'} " class="main-grey" style="height: 100%">
+     
+      Ime:
+      <input ng-model="ime" id="ime" type="text" style="height: 35px;width: 100%; padding: 0 10px;" />
+      <br/> Prezime:
+      <input ng-model="prezime" id="prezime" type="text" style="height: 35px;width: 100%; padding: 0 10px;" />
+      <br/> Email:
+      <input ng-model="email" id="email" type="text" style="height: 35px;width: 100%; padding: 0 10px;" />
+      <br/> Telefon:
+      <input ng-model="telefon" id="telefon" type="text" style="height: 35px;width: 100%; padding: 0 10px;" />
+      <br/> Lozinka:
+      <input ng-model="lozinka" id="lozinka" type="text" style="height: 35px;width: 100%; padding: 0 10px;" />
+      <br/>
+
+      <a ng-click="createProfile()" class="btn-primary" style="background-color: #cb2d2a">
+        <spane ng-style="{'font-size' : +font  +5 + 'px'} "> Izmijeni profil </spane>
+      </a>
+      <br/>
+      <br/>
+      <br>
+      <br>
+      <br>
+      <br>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div style="margin-top:50px;  background:white !important;" ng-include src="'templates/footer-copyright-eu.html'"></div>
+  </ion-content>
+</ion-view>

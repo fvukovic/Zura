@@ -1,0 +1,46 @@
+<ion-view>
+  <ion-content>
+    <br/>
+    <br/>
+    <h1 style="   text-align: center;margin-top:5px" ng-style="{'font-size' : +font + +5 + 'px'} " class="title-h1">Izrada profila</h1>
+    <div class="main-grey" ng-style="{'font-size' : +font  +2 + 'px'} " class="main-grey" style="height: 100%">
+    
+      <br> Ime:
+      <input type="text" id="ime" style="height: 35px;width: 100%; padding: 0 10px;" />
+      <br/> Prezime:
+      <input type="text" id="prezime" style="height: 35px;width: 100%; padding: 0 10px;" />
+      <br/> Korisničko ime:
+      <input type="text" id="kor_ime" style="height: 35px;width: 100%; padding: 0 10px;" />
+      <br/> Lozinka:
+      <input type="password" id="lozinka" style="height: 35px;width: 100%; padding: 0 10px;" />
+      <br/> Ponovite lozinku:
+      <input type="password" id="plozinka" style="height: 35px;width: 100%; padding: 0 10px;" />
+      <br/> Email:
+      <input type="email" id="email" style="height: 35px;width: 100%; padding: 0 10px;" />
+      <br/> Telefon:
+      <input type="text" id="telefon" style="height: 35px;width: 100%; padding: 0 10px;" />
+      <br/> Željeni DCK tim
+      <select type="select" id="tim" style="height: 35px;;width: 100%; background-color: #fff;">
+        <option>Timovi</option>
+      </select>
+      <br/>
+      <br/>
+
+      <a ng-click="openPopUp()" class="btn-primary" style="background-color: #cb2d2a">
+        <spane ng-style="{'font-size' : +font  +5 + 'px'} ">Napravi profil</spane>
+      </a>
+      <br/>
+      <br/>
+    </div>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+
+
+    <div ng-include src="'templates/footer-copyright-eu.html'"></div>
+  </ion-content>
+</ion-view>

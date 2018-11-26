@@ -1,0 +1,18 @@
+<ion-view>
+  <ion-content>
+    <br/><br/>
+    <h1 style="   text-align: center;margin-top:5px" ng-style="{'font-size' : +font + +5 + 'px'} "  class="title-h1" >Privatne poruke</h1>
+    <div class="main-grey"> 
+            <div ng-repeat="key in messages" > 
+                 <div ng-click="openUserPopUp(key.name,key.surname,key.sender)" style="border-radius:40px;background-color: #cb2d2a;color:white;padding-left:30px;">
+                     <div style="width: 80%"> OD:   <label>{{key.name+ " "+key.surname}}</label><br/>
+                      DATUM: <label>{{key.msgdate}}</label><br/>
+                      PORUKA: <spane>{{key.msgtext}}</spane>
+                    </div>
+                    </div> <br/> 
+             </div>   
+    </div> 
+    <div ng-include src="'templates/footer-copyright-eu.html'"></div> 
+  </ion-content>
+</ion-view>
+      

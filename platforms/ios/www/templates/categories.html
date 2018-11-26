@@ -1,0 +1,73 @@
+<ion-view>
+  <ion-content style="height: 100%">
+    <br/><br/>
+    <h1 style="   text-align: center;margin-top:5px" ng-style="{'font-size' : +font + +5 + 'px'} "  class="title-h1" >{{title}}</h1>
+    <div class="main-grey">
+      <div class="news-box" ng-repeat="vijest in events">
+        <div class="news-wrap" style="cursor:pointer;" menu-close ng-click="viewNews(vijest['id'])">
+          <img src="http://dckzz-volonteri.hr/images/medium/{{vijest['images'][0]}}" class="img-responsive" ng-if="vijest['images'][0]!=null"
+          />
+          <img src="img/no-image.jpg" class="img-responsive" ng-if="vijest['images'][0]==null" />
+          <h2 ng-style="{'font-size' : +font + 'px'} " class="news-title">{{vijest["title"]}}</h2>
+        </div>
+        <table class="news-options">
+          <tbody>
+            <tr>
+              <td>
+                <div ng-style="{'font-size' : +font - +5 + 'px'} " style="cursor:pointer;" menu-close ng-click="PopupComment(vijest['id'])">
+                  <img class="news-icon" src="img/komentari.png" />
+                  <span></span>komentiraj</div>
+              </td>
+              <td ng-if="category!=3 && category!=2">
+                <div ng-style="{'font-size' : +font - +5 + 'px'} " style="cursor:pointer;" menu-close ng-click="PopupCreateReminder(vijest['id'])">
+                  <img class="news-icon" src="img/podsjetnik.png" />
+                  <span>podsjeti me</span>
+                </div>
+              </td>
+              <td ng-style="{'font-size' : +font - +5 + 'px'} " ng-if="vijest['favorit']==1">
+                <div style="cursor:pointer;" menu-close ng-click="PopupAddToFavorites(vijest['id'])">
+                  <img class="news-icon" src="img/favorite.png" />
+                  <span>favorit</span>
+                </div>
+              </td>
+              <td ng-style="{'font-size' : +font - +5 + 'px'} " ng-if="vijest['favorit']==2">
+                <div style="cursor:pointer;" menu-close ng-click="removeFavorite(vijest['id'])">
+                  <img class="news-icon" src="img/favorite-no.png" />
+                  <span>favorit</span>
+                </div>
+              </td>
+              <td ng-if="category!=3 && category!=2">
+                <div ng-style="{'font-size' : +font - +5 + 'px'} " style="cursor:pointer;" menu-close ng-click="PopupShowMap(vijest['longitude'],vijest['latitude'])">
+                  <img class="news-icon" src="img/lokacija.png" />
+                  <span>lokacija</span>
+                </div>
+              </td>
+              <td>
+                <div ng-style="{'font-size' : +font - +5 + 'px'} " style="cursor:pointer;" menu-close ng-click="PopupShare(vijest['link'])">
+                  <img class="news-icon" src="img/share.png" />
+                  <span>podijeli</span>
+                </div>
+              </td>
+              <td  ng-if="!vijest.logged && category==1">
+                <div ng-style="{'font-size' : +font - +5 + 'px'} " style="cursor:pointer;" menu-close ng-click="PopupCheckIn(vijest['id'])">
+                  <img class="news-icon" src="img/prijava.png" />
+                  <span>prijavi se</span>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div> 
+      <br>
+      <br>
+
+    </div>
+    <a ng-click="addMoreNews()" class="btn-primary" style="background-color: #cb2d2a"><spane ng-style="{'font-size' : +font  +5 + 'px'} ">Učitaj još vijesti</spane></a><br/><br/>
+  </div><br/><br/><br/><br/><br/><br/><br/>
+    <div style="margin-top:-20px"  style="background-color: white;" ng-include src="'templates/footer-copyright-eu.html'"></div>
+    <br>
+    <br>
+    <br>
+    <br>
+  </ion-content>
+</ion-view>

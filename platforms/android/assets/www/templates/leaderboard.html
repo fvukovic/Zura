@@ -1,0 +1,64 @@
+<style>
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+    
+    td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 4px;
+    }
+    
+    tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+    </style>
+
+<ion-view style="">
+    <ion-content>
+        <br/>
+        <br/>
+        
+        <h1 style="   text-align: center;margin-top:5px" ng-style="{'font-size' : +font + +5 + 'px'} " class="title-h1">Brojevno stanje</h1>
+        <div ng-style="{'font-size' : +font  -2 + 'px'} " class="main-grey" style="height: 100%;width: 100%;">
+                <br/> 
+                <p style="text-align: center">{{team}}</p>
+              
+            <br>
+            <table style="width:100%;table-layout:fixed">
+                <tr style="background-color : #cb2d2a;color:white">
+                        <td style="width: 5%;text-align: left"> </td>
+                    <td>Ime</td>
+                    <td>Prezime</td>
+                    <td>Škola</td>
+                    <td>Bodovi</td>
+                </tr>
+                <tr ng-repeat="key in users"> 
+                    <td style="width: 5%;text-align: left">{{$index + 1}}</td>
+                    <td>{{key.Ime}}</td>
+                    <td>{{key.Prezime}}</td>
+                    <td>{{key.Mjesto}}</td>
+                    <td>{{key.Bodovi}}</td>
+                </tr>
+            </table> 
+          
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <div ng-include src="'templates/footer-copyright-eu.html'"></div> 
+        </div>
+        <br>
+       
+      
+     
+    </ion-content>
+    
+</ion-view>

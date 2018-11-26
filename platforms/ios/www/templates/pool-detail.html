@@ -1,0 +1,33 @@
+
+<style>input[type='radio'] { transform: scale(2);background-color: transparent }</style>
+<ion-view>
+    <ion-content>
+        <br/>
+        <br/>
+        <h1 style="   text-align: center;margin-top:5px" ng-style="{'font-size' : +font + +5 + 'px'} " class="title-h1">Ankete</h1>
+        <div class="main-grey">
+            <br/>
+            <div>
+                <p  style="overflow: visible;height: auto;font-size:16px;font-weight: bold;margin:10px;">{{quetion}}</p>
+            </div>
+
+            <div ng-if="answers==''">
+                <input type="text" id="answer" />
+            </div>
+            <br/><br/> 
+            <form action=""> 
+            <div ng-repeat="row in answers">    
+                 <ion-radio ng-click="addValue(row.Odgovor)"  class="item-text-wrap" style="overflow: visible;height: auto;font-size:14px"   >{{row.Odgovor}}</ion-radio> 
+            </div>  
+        
+        </form>
+        </div>
+        <a ng-if="over==1" ng-click="nextQuestion()" class="btn-primary" style="margin-top:-100px;">Nastavi</a>
+        <a ng-if="over==0" ng-click="finishPoll()" class="btn-primary" style="margin-top:-100px;">Završi</a>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <div style="margin-top:-20px" ng-include src="'templates/footer-copyright-eu.html'"></div>
+    </ion-content>
+</ion-view>

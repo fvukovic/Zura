@@ -1,0 +1,13 @@
+<ion-view style="height: 170px; margin-top: -75px; width: 100%;">
+    <ion-content data-tap-disabled="true" scroll="false" style="top: 0;">
+        <h1 ng-style="{'font-size' : +font + +5 + 'px'} " class="popup-title">Podijeli događaj
+            <img ng-click="closePopUp()" class="btn-close" src="img/remove.png" />
+        </h1>
+        <div ng-style="{'font-size' : +font   + 'px'} " class="popup-wrap" style="padding: 20px;">
+            <div  ng-click="shareViaFacebook()" style="margin-bottom:10px;">
+                <img style="width: 15px; height: 15px;" src="img/facebook.png" /> Podijeli na Facebook</div> 
+            <div ng-click="shareViaTwitter()" style="margin-bottom:10px;">
+                <img style="width: 15px; height: 15px;" src="img/twitter.png" /> Podijeli na Twitter</div>
+        </div>
+    </ion-content>
+</ion-view>
