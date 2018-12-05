@@ -8,7 +8,7 @@ angular.module('starter')
 
         var request = $http({
             method: "POST",
-            url: 'http://dckzz-volonteri.hr/rest/getAllLoggedEvents.php', 
+            url: 'http://freezura.eu/rest/getAllLoggedEvents.php', 
             data: { user_id: window.localStorage.getItem("id")},
             headers: { 'Content-Type': 'application/x-www-form-urlencoded' }
 
@@ -25,7 +25,7 @@ angular.module('starter')
 
         var request = $http({
             method: "POST",
-            url: 'http://dckzz-volonteri.hr/rest/details.php',
+            url: 'http://freezura.eu/rest/details.php',
             headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
             data:{id:$stateParams.newsId}
 
@@ -43,7 +43,7 @@ angular.module('starter')
 
             var request = $http({
                 method: "POST",
-                url: 'http://dckzz-volonteri.hr/rest/commentsget.php',
+                url: 'http://freezura.eu/rest/commentsget.php',
                 headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
                 data:{event:$stateParams.newsId}
     

@@ -27,7 +27,7 @@ angular.module('starter')
                  
                     var request = $http({
                         method: "POST",
-                        url: 'http://dckzz-volonteri.hr/rest/categoryevents.php',
+                        url: 'http://freezura.eu/rest/categoryevents.php',
                         data: { kategorija: window.localStorage.getItem("category"), start:  window.localStorage.getItem("start") },
                         headers: { 'Content-Type': 'application/x-www-form-urlencoded' }
 
@@ -49,7 +49,7 @@ angular.module('starter')
         $scope.logInToEvent = function () { 
             var request = $http({
                 method: "POST",
-                url: 'http://dckzz-volonteri.hr/rest/eventsusers.php',
+                url: 'http://freezura.eu/rest/eventsusers.php',
                 data: { event:  $scope.idLogged, user_id: window.localStorage.getItem("id") },
                 headers: { 'Content-Type': 'application/x-www-form-urlencoded' }
     

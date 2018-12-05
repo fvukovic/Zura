@@ -7,7 +7,7 @@ angular.module('starter')
          /* Post request for selected news by ID on api */
          var request = $http({
             method: "POST",
-            url: 'http://dckzz-volonteri.hr/rest/teams.php',
+            url: 'http://freezura.eu/rest/teams.php',
             headers: { 'Content-Type': 'application/x-www-form-urlencoded' }
 
         });
@@ -20,7 +20,7 @@ angular.module('starter')
 
             var request2 = $http({
                 method: "POST",
-                url: 'http://dckzz-volonteri.hr/rest/commentsteamget.php',
+                url: 'http://freezura.eu/rest/commentsteamget.php',
                 headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
                 data:{team:$stateParams.newsId}
     

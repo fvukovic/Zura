@@ -17,27 +17,12 @@ module.exports = [
     ]
   },
   {
-    "id": "es6-promise-plugin.Promise",
-    "file": "plugins/es6-promise-plugin/www/promise.js",
-    "pluginId": "es6-promise-plugin",
-    "runs": true
-  },
-  {
-    "id": "cordova-plugin-x-socialsharing.SocialSharing",
-    "file": "plugins/cordova-plugin-x-socialsharing/www/SocialSharing.js",
-    "pluginId": "cordova-plugin-x-socialsharing",
+    "id": "cordova-plugin-statusbar.statusbar",
+    "file": "plugins/cordova-plugin-statusbar/www/statusbar.js",
+    "pluginId": "cordova-plugin-statusbar",
     "clobbers": [
-      "window.plugins.socialsharing"
+      "window.StatusBar"
     ]
-  },
-  {
-    "id": "ionic-plugin-keyboard.keyboard",
-    "file": "plugins/ionic-plugin-keyboard/www/android/keyboard.js",
-    "pluginId": "ionic-plugin-keyboard",
-    "clobbers": [
-      "cordova.plugins.Keyboard"
-    ],
-    "runs": true
   },
   {
     "id": "de.appplant.cordova.plugin.local-notification.LocalNotification",
@@ -67,45 +52,27 @@ module.exports = [
     ]
   },
   {
-    "id": "cordova-sqlite-storage.SQLitePlugin",
-    "file": "plugins/cordova-sqlite-storage/www/SQLitePlugin.js",
-    "pluginId": "cordova-sqlite-storage",
+    "id": "ionic-plugin-keyboard.keyboard",
+    "file": "plugins/ionic-plugin-keyboard/www/android/keyboard.js",
+    "pluginId": "ionic-plugin-keyboard",
     "clobbers": [
-      "SQLitePlugin"
-    ]
-  },
-  {
-    "id": "cordova-plugin-fcm.FCMPlugin",
-    "file": "plugins/cordova-plugin-fcm/www/FCMPlugin.js",
-    "pluginId": "cordova-plugin-fcm",
-    "clobbers": [
-      "FCMPlugin"
-    ]
-  },
-  {
-    "id": "cordova-plugin-statusbar.statusbar",
-    "file": "plugins/cordova-plugin-statusbar/www/statusbar.js",
-    "pluginId": "cordova-plugin-statusbar",
-    "clobbers": [
-      "window.StatusBar"
-    ]
+      "cordova.plugins.Keyboard"
+    ],
+    "runs": true
   }
 ];
 module.exports.metadata = 
 // TOP OF METADATA
 {
-  "cordova-plugin-device": "1.1.7",
-  "cordova-plugin-splashscreen": "4.1.0",
-  "cordova-plugin-whitelist": "1.3.3",
-  "es6-promise-plugin": "4.1.0",
-  "cordova-plugin-x-socialsharing": "5.3.1",
-  "ionic-plugin-keyboard": "2.2.1",
-  "cordova-plugin-console": "1.1.0",
+  "cordova-android-support-gradle-release": "2.0.1",
   "cordova-plugin-app-event": "1.2.1",
+  "cordova-plugin-console": "1.1.0",
+  "cordova-plugin-device": "1.1.6",
+  "cordova-plugin-splashscreen": "4.0.3",
+  "cordova-plugin-statusbar": "2.4.3-dev",
+  "cordova-plugin-whitelist": "1.3.3",
   "de.appplant.cordova.plugin.local-notification": "0.8.5",
-  "cordova-sqlite-storage": "2.2.1",
-  "cordova-plugin-fcm": "2.1.2",
-  "cordova-plugin-statusbar": "2.4.3-dev"
+  "ionic-plugin-keyboard": "2.2.1"
 };
 // BOTTOM OF METADATA
 });

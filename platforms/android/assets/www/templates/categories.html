@@ -1,7 +1,7 @@
 <ion-view>
   <ion-content style="height: 100%">
     <br/><br/>
-    <h1 style="   text-align: center;margin-top:5px" ng-style="{'font-size' : +font + +5 + 'px'} "  class="title-h1" >{{title}}</h1>
+    <h1 style="   " ng-style="{'font-size' : +font + +5 + 'px'} "  class="title-h1" >{{title}}</h1>
     <div class="main-grey">
       <div class="news-box" ng-repeat="vijest in events">
         <div class="news-wrap" style="cursor:pointer;" menu-close ng-click="viewNews(vijest['id'])">
@@ -18,7 +18,7 @@
       <br>
 
     </div>
-    <a ng-click="addMoreNews()" class="btn-primary" style="background-color: #cb2d2a"><spane ng-style="{'font-size' : +font  +5 + 'px'} ">Učitaj još vijesti</spane></a><br/><br/>
+    <a ng-click="addMoreNews()" class="btn-primary" style="background-color: #A23A85"><spane ng-style="{'font-size' : +font  +5 + 'px'} ">Učitaj još vijesti</spane></a><br/><br/>
   </div><br/><br/><br/><br/><br/><br/><br/>
     <div style="margin-top:-20px"  style="background-color: white;" ng-include src="'templates/footer-copyright-eu.html'"></div>
     <br>

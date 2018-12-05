@@ -1,7 +1,7 @@
 <ion-view>
         <ion-content >
           <br/><br/>
-          <h1 style="   text-align: center;margin-top:5px" ng-style="{'font-size' : +font + +5 + 'px'} "  class="title-h1" > Timovi DCK</h1>
+          <h1 style="   " ng-style="{'font-size' : +font + +5 + 'px'} "  class="title-h1" > Timovi DCK</h1>
           <div  class="main-grey" >
             <div class="news-box" ng-repeat="vijest in teams">
               <div class="news-wrap" style="cursor:pointer;" menu-close ng-click="viewNews(vijest['id'])">
@@ -9,28 +9,7 @@
                 <img src="img/no-image.jpg" class="img-responsive" ng-if="vijest['images'][0]==null" />
                 <h2 ng-style="{'font-size' : +font  + 'px'} " class="news-title">{{vijest["title"]}}</h2>
               </div>
-              <table class="news-options">
-                <tbody>
-                  <tr>
-                    <td>
-                      <div ng-style="{'font-size' : +font - +5 + 'px'} " style="cursor:pointer;" menu-close ng-click="PopupComment(vijest['id'])">
-                        <img class="news-icon" src="img/komentari.png" />
-                        <span></span>komentiraj</div>
-                    </td>
-                    <td>
-                      <div ng-style="{'font-size' : +font - +5 + 'px'} " style="cursor:pointer;" menu-close ng-click="PopupShare(vijest['link'])">
-                        <img class="news-icon" src="img/share.png" />
-                        <span>podijeli</span>
-                      </div>
-                    </td>
-                    <td >
-                      <div ng-style="{'font-size' : +font - +5 + 'px'} " style="cursor:pointer;" menu-close ng-click="PopupCheckIn(vijest['id'])">
-                        <img class="news-icon" src="img/prijava.png" />
-                        <span>prijavi se</span>
-                      </div>
-                    </td>
-                  </tr>
-                </tbody>
+              <table class="news-options"> 
               </table>
             </div> 
           </div> 

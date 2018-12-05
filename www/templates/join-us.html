@@ -1,0 +1,32 @@
+<ion-view>
+    <ion-content  >
+      <br/><br/>
+     
+      <h1 style="  " ng-style="{'font-size' : +font + +5 + 'px'} "  class="title-h1" >Uključi se</h1>
+      <div  ng-style="{'font-size' : +font + +2 + 'px'} " class="main-grey" style="height: 160%">
+        <p>Imaš 15-25 godina? Uključi se u zajednicu slobodnih umjetnika popunjavanjem ovog formulara! U poruci obavezno navedi za koju radionicu se prijavljuješ: glazbena radionica, radionica kreativnog pisanja i nakladništva, radionica stripa i ilustracije, radionica suvremenog plesa i likovna radionica izrade murala. 
+            <br/><br/>
+            Nakon što se formira grupa polaznika, obavijestit ćemo o informacijama održavanja radionica. 
+            <br/><br/>
+            Radionice će se održavati u Puli.</p>
+            <br/> 
+        Ime: 
+        <input type="text" ng-model="ime" id="ime" style="height: 35px;width: 100%"/><br/>
+        Prezime:
+        <input type="text" ng-model="prezime" id="prezime" style="height: 35px;width: 100%"/><br/> 
+        Poštanski broj:
+        <input type="text" ng-model="prezime" id="prezime" style="height: 35px;width: 100%"/><br/>
+        Mjesto:
+        <input type="text" ng-model="prezime" id="prezime" style="height: 35px;width: 100%"/><br/>
+        Telefon:
+        <input type="text" ng-model="prezime" id="prezime" style="height: 35px;width: 100%"/><br/>
+        E-mail: 
+        <input type="text" ng-model="email" id="email" style="height: 35px;width: 100%"/><br/> 
+        Poruka:
+        <input type="text" id="poruka" style="height: 100px;width: 100%"/><br/> 
+
+        <a ng-click="sendMessage()" class="btn-primary" style="background-color: #A23A85; "> <span  ng-style="{'font-size' : +font + +5 + 'px'} ">Pošalji</span></a><br/><br/><br/><br/>
+        <br/><br/>  </div>  
+      <div style="background-color: white;padding-top:20px" ng-include src="'templates/footer-copyright-eu.html'"></div> 
+    </ion-content>
+  </ion-view>

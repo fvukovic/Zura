@@ -1,16 +1,15 @@
 {
   "project_info": {
-    "project_number": "701265934614",
-    "firebase_url": "https://crvenikriz-40be9.firebaseio.com",
-    "project_id": "crvenikriz-40be9",
-    "storage_bucket": "crvenikriz-40be9.appspot.com"
+    "project_number": "7012659346131", 
+    "project_id": "com.ionicframework.freezura",
+    "storage_bucket": "com.ionicframework.freezura"
   },
   "client": [
     {
       "client_info": {
         "mobilesdk_app_id": "1:701265934614:android:7258fc41e7fd34d8",
         "android_client_info": {
-          "package_name": "com.ionicframework.crvenikriz751964"
+          "package_name": "com.ionicframework.freezura"
         }
       },
       "oauth_client": [

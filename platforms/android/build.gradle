@@ -32,7 +32,7 @@ buildscript {
     // http://tools.android.com/tech-docs/new-build-system/version-compatibility
     // and https://issues.apache.org/jira/browse/CB-8143
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.0.0'
+        classpath 'com.android.tools.build:gradle:2.2.3'
     }
 }
 
@@ -47,7 +47,7 @@ allprojects {
 }
 
 task wrapper(type: Wrapper) {
-    gradleVersion = '4.1.0'
+    gradleVersion = '2.14.1'
 }
 
 // Configuration properties. Set these via environment variables, build-extras.gradle, or gradle.properties.
@@ -92,7 +92,7 @@ ext {
 }
 
 // PLUGIN GRADLE EXTENSIONS START
-apply from: "cordova-plugin-fcm/crvenikriz751964-FCMPlugin.gradle"
+apply from: "cordova-android-support-gradle-release/freezura-cordova-android-support-gradle-release.gradle"
 // PLUGIN GRADLE EXTENSIONS END
 
 def hasBuildExtras = file('build-extras.gradle').exists()
@@ -250,13 +250,11 @@ android {
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: '*.jar')
+    compile fileTree(dir: 'libs', include: '*.jar')
     // SUB-PROJECT DEPENDENCIES START
-    implementation(project(path: "CordovaLib"))
-    compile "com.android.support:support-v4:24.1.1+"
+    debugCompile(project(path: "CordovaLib", configuration: "debug"))
+    releaseCompile(project(path: "CordovaLib", configuration: "release"))
     compile "com.android.support:support-v4:+"
-    compile "com.google.firebase:firebase-core:+"
-    compile "com.google.firebase:firebase-messaging:+"
     // SUB-PROJECT DEPENDENCIES END
 }
 
@@ -274,7 +272,7 @@ def promptForReleaseKeyPassword() {
 
 gradle.taskGraph.whenReady { taskGraph ->
     taskGraph.getAllTasks().each() { task ->
-        if (['validateReleaseSigning', 'validateSigningRelease', 'validateSigningArmv7Release', 'validateSigningX86Release'].contains(task.name)) {
+        if (task.name == 'validateReleaseSigning' || task.name == 'validateSigningRelease') {
             promptForReleaseKeyPassword()
         }
     }

@@ -15,7 +15,7 @@ angular.module('starter')
             $scope.title = "Prijavi problem";
             $scope.$evalAsync();
 
-        } else if (window.localStorage.getItem("typeContact") == 3) {
+        }  else if (window.localStorage.getItem("typeContact") == 3) {
             $scope.title = "Kontakt";
             $scope.$evalAsync();
 
