@@ -18,7 +18,7 @@
     margin-top: 0 !important;
 }
 .header {
-    background: #d32f2e;
+    background: #A23A85;
     display: block;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -154,10 +154,10 @@ table.news-options tr td img {
 .news-text {
     padding: 10px;
     font-size: 9px;
-    border-bottom: 1px solid #d32f2e;
+    border-bottom: 1px solid #A23A85;
 }
 h2.subtitle {
-    color: #cb2d2a;
+    color: #A23A85;
     font-size: 12px;
     padding: 0;
     margin-top: 10px;
@@ -186,13 +186,13 @@ h2.subtitle {
     left: 70px;
     top: 20px;
     font-size: 20px;
-    color: #d32f2e;
+    color: #A23A85;
     font-weight: bold;
 }
 
 /* popup - map */
 h1.popup-title {
-    background: #8b0504;
+    background: #A23A85;
     padding: 15px;
     color: #fff;
     font-size: 13px;
@@ -215,7 +215,7 @@ h1.popup-title {
     padding: 10px;
 }
 .btn-primary {
-    background: #8b0504;
+    background: #A23A85;
     display: inline-block;
     width: 100%;
     padding: 8px 10px;

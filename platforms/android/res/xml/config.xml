@@ -25,21 +25,21 @@
     <name>FreeZURA</name>
     <description>FreeZURA</description>
     <author email="hi@ionicframework" href="http://ionicframework.com/">Filip Vuković</author>
-    <content original-src="index.html" src="http://192.168.0.101:8100" />
+    <content src="index.html" />
     <access origin="*" />
     <allow-navigation href="http://ionic.local/*" />
     <allow-navigation href="http://192.168.43.219:8100" />
     <allow-navigation href="http://10.24.29.242:8100" />
     <allow-navigation href="http://192.168.137.112:8100" />
     <allow-navigation href="http://10.24.31.164:8100" />
+    <allow-navigation href="http://192.168.137.1:8100" />
+    <allow-navigation href="http://192.168.0.101:8100" sessionid="4d15df11" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
     <allow-intent href="tel:*" />
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
-    <allow-navigation href="http://192.168.137.1:8100" />
-    <allow-navigation href="http://192.168.0.101:8100" sessionid="4d15df11" />
     <icon density="ldpi" src="resources/android/icon/drawable-ldpi-icon.png" />
     <icon density="mdpi" src="resources/android/icon/drawable-mdpi-icon.png" />
     <icon density="hdpi" src="resources/android/icon/drawable-hdpi-icon.png" />

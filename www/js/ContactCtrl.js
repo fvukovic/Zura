@@ -21,8 +21,7 @@ angular.module('starter')
 
         } 
 
-        $scope.sendMessage = function(){  $ionicLoading.show({ template: 'Poruka je poslana! ', noBackdrop: true, duration: 3000 });
-        return;
+        $scope.sendMessage = function(){  $ionicLoading.show({ template: 'Poruka je poslana! ', noBackdrop: true, duration: 3000 }); 
             const ime = document.getElementById("ime");
             const prezime = document.getElementById("prezime");
             const lozinka = document.getElementById("lozinka"); 
@@ -32,9 +31,8 @@ angular.module('starter')
             try{ 
             var request = $http({
                 method: "POST",
-                url: 'http://dckzz-volonteri.hr/rest/sendmail.php',  
-                data:{ime:ime.value,prezime:prezime.value,mail:email.value,poruka:poruka.value,id: window.localStorage.getItem("user_id"),
-            type:window.localStorage.getItem("typeContact") },
+                url: 'http://freezura.eu/rest/sendmail.php',  
+                data:{ime:ime.value,prezime:prezime.value,mail:email.value,poruka:poruka.value},
                 headers: { 'Content-Type': 'application/x-www-form-urlencoded' }
     
             });
@@ -43,6 +41,7 @@ angular.module('starter')
         }
     
             request.success(function (data) { 
+                alert(data)
                 $ionicLoading.show({ template: 'Poruka je poslana! ', noBackdrop: true, duration: 3000 });
             });
         }

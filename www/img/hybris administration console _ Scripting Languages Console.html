@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<!-- saved from url=(0059)https://wienerberger-hybris.ecx.local/hac/console/scripting -->
+<html lang="en" class="js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths gr__wienerberger-hybris_ecx_local"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+    <meta name="_csrf_parameter" content="_csrf"><meta name="_csrf_header" content="X-CSRF-TOKEN"><meta name="_csrf" content="6cb16768-5389-4e25-91e7-d9a78d89e520">
+	<title>hybris administration console | Scripting Languages Console</title>
+	<link rel="stylesheet" href="./hybris administration console _ Scripting Languages Console_files/blueprint.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="./hybris administration console _ Scripting Languages Console_files/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="./hybris administration console _ Scripting Languages Console_files/screen(1).css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="./hybris administration console _ Scripting Languages Console_files/jquery-ui.1.12.1.css" type="text/css" media="screen, projection">
+
+	<script type="text/javascript" src="./hybris administration console _ Scripting Languages Console_files/ba-debug.min.js"></script>
+	<script type="text/javascript" src="./hybris administration console _ Scripting Languages Console_files/modernizr.custom.19066.js"></script>
+	<script type="text/javascript" src="./hybris administration console _ Scripting Languages Console_files/jquery-3.0.0.min.js"></script>
+	<script type="text/javascript" src="./hybris administration console _ Scripting Languages Console_files/jquery-ui-1.12-1.custom.min.js"></script>
+	<script type="text/javascript" src="./hybris administration console _ Scripting Languages Console_files/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="./hybris administration console _ Scripting Languages Console_files/global.js"></script>
+	<script type="text/javascript" src="./hybris administration console _ Scripting Languages Console_files/application.js"></script>
+	<script type="text/javascript" src="./hybris administration console _ Scripting Languages Console_files/jquery.cookie.js"></script>
+
+	<script type="text/javascript" src="./hybris administration console _ Scripting Languages Console_files/searchsuggest.js"></script>
+
+	
+
+	<link rel="stylesheet" href="./hybris administration console _ Scripting Languages Console_files/style.css" type="text/css" media="screen, projection">
+	<link rel="shortcut icon" href="https://wienerberger-hybris.ecx.local/hac/static/img/favicon.png">
+	<link rel="icon" href="https://wienerberger-hybris.ecx.local/hac/static/img/favicon.png" type="image/x-icon">
+	
+	
+    <link rel="stylesheet" href="./hybris administration console _ Scripting Languages Console_files/zTreeStyle.css" type="text/css" media="screen, projection">
+    <link rel="stylesheet" href="./hybris administration console _ Scripting Languages Console_files/scripting.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="./hybris administration console _ Scripting Languages Console_files/onoff.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="./hybris administration console _ Scripting Languages Console_files/codemirror.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="./hybris administration console _ Scripting Languages Console_files/codemirror3-custom.css" type="text/css" media="screen, projection">
+
+    <script type="text/javascript" src="./hybris administration console _ Scripting Languages Console_files/history.js"></script>
+    <script type="text/javascript" src="./hybris administration console _ Scripting Languages Console_files/jquery.ztree.all-3.5.min.js"></script>
+	<script type="text/javascript" src="./hybris administration console _ Scripting Languages Console_files/codemirror.js"></script>
+	<script type="text/javascript" src="./hybris administration console _ Scripting Languages Console_files/groovy.js"></script>
+	<script type="text/javascript" src="./hybris administration console _ Scripting Languages Console_files/javascript.js"></script>
+	<script type="text/javascript" src="./hybris administration console _ Scripting Languages Console_files/clike.js"></script>
+	<script type="text/javascript" src="./hybris administration console _ Scripting Languages Console_files/active-line.js"></script>
+	<script type="text/javascript" src="./hybris administration console _ Scripting Languages Console_files/scripting.js"></script>
+	<script type="text/javascript" src="./hybris administration console _ Scripting Languages Console_files/historyHandler.js"></script>
+
+</head>
+<body data-gr-c-s-loaded="true">
+<!-- tenant badge, only shown for non-master tenants -->
+
+<div id="mainContainer" class="container" data-homelink="/hac/" data-contextpath="/hac">
+	<header class="span-24 last">
+		
+			<div id="loginInfo">
+                You're Filip Vuković
+                <form method="post" action="https://wienerberger-hybris.ecx.local/hac/j_spring_security_logout">
+                    <input type="hidden" name="_csrf" value="6cb16768-5389-4e25-91e7-d9a78d89e520">
+                    <input type="submit" value="logout">
+                </form>
+			</div>
+		
+		<a href="https://wienerberger-hybris.ecx.local/hac/"><img id="logo" src="./hybris administration console _ Scripting Languages Console_files/logo.png" alt="logo"></a>
+
+		<input id="searchsuggest" autofocus="" type="text" placeholder="Type here..." class="ui-autocomplete-input" autocomplete="off">
+
+		<div class="searchicon"></div>
+
+		 
+
+
+	<div id="container">
+<nav class="topnavigation" style="overflow-x: visible;overflow-y: hidden;ms-overflow-y: hidden;white-space:nowrap;width: 100%;">
+<ul>
+<li data-menuitem="platform"><a href="https://wienerberger-hybris.ecx.local/hac/console/scripting#" id="platform" class="nav">platform</a></li>
+
+<li data-menuitem="monitoring"><a href="https://wienerberger-hybris.ecx.local/hac/console/scripting#" id="monitoring" class="nav">monitoring</a></li>
+
+<li data-menuitem="maintenance"><a href="https://wienerberger-hybris.ecx.local/hac/console/scripting#" id="maintenance" class="nav">maintenance</a></li>
+
+<li data-menuitem="console"><a href="https://wienerberger-hybris.ecx.local/hac/console/scripting#" id="console" class="nav">console</a></li>
+
+</ul>
+</nav>
+<nav class="subnavigation span-24 last" id="nav_platform" style="display: none;"> <div class="sidebar-container"> <ul><li data-menuitem="tenants"><a href="https://wienerberger-hybris.ecx.local/hac/tenants">tenants</a></li><li data-menuitem="configuration"><a href="https://wienerberger-hybris.ecx.local/hac/platform/config">configuration</a></li><li data-menuitem="system"><a href="https://wienerberger-hybris.ecx.local/hac/platform/system">system</a></li><li data-menuitem="logging"><a href="https://wienerberger-hybris.ecx.local/hac/platform/log4j">logging</a></li><li data-menuitem="extensions"><a href="https://wienerberger-hybris.ecx.local/hac/platform/extensions">extensions</a></li><li data-menuitem="initialization"><a href="https://wienerberger-hybris.ecx.local/hac/platform/init">initialization</a></li><li data-menuitem="update"><a href="https://wienerberger-hybris.ecx.local/hac/platform/update">update</a></li><li data-menuitem="sql_scripts"><a href="https://wienerberger-hybris.ecx.local/hac/platform/dryrun">SQL scripts</a></li><li data-menuitem="license"><a href="https://wienerberger-hybris.ecx.local/hac/platform/license">license</a></li><li data-menuitem="support"><a href="https://wienerberger-hybris.ecx.local/hac/platform/support">support</a></li><li data-menuitem="pk_analyzer"><a href="https://wienerberger-hybris.ecx.local/hac/platform/pkanalyzer">PK analyzer</a></li><li data-menuitem="classpath_analyzer"><a href="https://wienerberger-hybris.ecx.local/hac/platform/jars">classpath analyzer</a></li></ul></div></nav><nav class="subnavigation span-24 last" id="nav_monitoring" style="display: none;"> <div class="sidebar-container"> <ul><li data-menuitem="cache"><a href="https://wienerberger-hybris.ecx.local/hac/monitoring/cache">cache</a></li><li data-menuitem="cluster"><a href="https://wienerberger-hybris.ecx.local/hac/monitoring/cluster">cluster</a></li><li data-menuitem="database"><a href="https://wienerberger-hybris.ecx.local/hac/monitoring/database">database</a></li><li data-menuitem="cron_jobs"><a href="https://wienerberger-hybris.ecx.local/hac/monitoring/cronjobs">cron jobs</a></li><li data-menuitem="jmx_mbeans"><a href="https://wienerberger-hybris.ecx.local/hac/monitoring/jmx">JMX MBeans</a></li><li data-menuitem="memory"><a href="https://wienerberger-hybris.ecx.local/hac/monitoring/memory">memory</a></li><li data-menuitem="thread_dump"><a href="https://wienerberger-hybris.ecx.local/hac/monitoring/threaddump">thread dump</a></li><li data-menuitem="performance"><a href="https://wienerberger-hybris.ecx.local/hac/monitoring/performance">performance</a></li><li data-menuitem="suspend"><a href="https://wienerberger-hybris.ecx.local/hac/monitoring/suspendresume">suspend</a></li></ul></div></nav><nav class="subnavigation span-24 last" id="nav_maintenance" style="display: none;"> <div class="sidebar-container"> <ul><li data-menuitem="cleanup"><a href="https://wienerberger-hybris.ecx.local/hac/maintain/cleanup">cleanup</a></li><li data-menuitem="encryption_keys"><a href="https://wienerberger-hybris.ecx.local/hac/maintain/keys">encryption keys</a></li><li data-menuitem="deployment"><a href="https://wienerberger-hybris.ecx.local/hac/maintain/deployments">deployment</a></li></ul></div></nav><nav class="subnavigation span-24 last" id="nav_console" style="display: none;"> <div class="sidebar-container"> <ul><li data-menuitem="scripting_languages"><a href="https://wienerberger-hybris.ecx.local/hac/console/scripting">scripting languages</a></li><li data-menuitem="flexiblesearch"><a href="https://wienerberger-hybris.ecx.local/hac/console/flexsearch">flexibleSearch</a></li><li data-menuitem="impex_import"><a href="https://wienerberger-hybris.ecx.local/hac/console/impex/import">ImpEx import</a></li><li data-menuitem="impex_export"><a href="https://wienerberger-hybris.ecx.local/hac/console/impex/export">ImpEx export</a></li><li data-menuitem="ldap"><a href="https://wienerberger-hybris.ecx.local/hac/console/ldap">LDAP</a></li></ul></div></nav>
+
+
+
+	</div></header>
+	<div id="notification" class="span-24 last" data-hurl="" data-pl="" data-lid="">
+		<div id="msg" class="msg">This is a beautiful notification message.</div>
+	</div>
+
+	<!-- begin page content -->
+	
+    
+        
+    
+    <span hidden="hidden" id="lastActiveTab"></span>
+		<div class="prepend-top span-17 colborder" id="content" encrypturl="/hac/console/encrypt" decrypturl="/hac/console/decrypt">
+			<button id="toggleSidebarButton">&gt;</button>
+			<div class="marginLeft">
+				<h2>Scripting Languages Console</h2>
+
+                <div id="tabsNoSidebar" class="ui-tabs ui-corner-all ui-widget ui-widget-content">
+					<ul role="tablist" class="ui-tabs-nav ui-corner-all ui-helper-reset ui-helper-clearfix ui-widget-header">
+						<li role="tab" tabindex="-1" class="ui-tabs-tab ui-corner-top ui-state-default ui-tab" aria-controls="tabs-edit" aria-labelledby="nav-tabs-edit" aria-selected="false" aria-expanded="false"><a id="nav-tabs-edit" href="https://wienerberger-hybris.ecx.local/hac/console/scripting#tabs-edit" role="presentation" tabindex="-1" class="ui-tabs-anchor">Edit Statement</a></li>
+						<li role="tab" tabindex="-1" class="ui-tabs-tab ui-corner-top ui-state-default ui-tab" aria-controls="tabs-browse" aria-labelledby="nav-tabs-browse" aria-selected="false" aria-expanded="false"><a id="nav-tabs-browse" href="https://wienerberger-hybris.ecx.local/hac/console/scripting#tabs-browse" role="presentation" tabindex="-1" class="ui-tabs-anchor">Browse</a></li>
+						<li role="tab" tabindex="-1" class="ui-tabs-tab ui-corner-top ui-state-default ui-tab" aria-controls="tabs-result" aria-labelledby="nav-tabs-result" aria-selected="false" aria-expanded="false"><a id="nav-tabs-result" href="https://wienerberger-hybris.ecx.local/hac/console/scripting#tabs-result" role="presentation" tabindex="-1" class="ui-tabs-anchor">Result</a></li>
+						<li role="tab" tabindex="-1" class="ui-tabs-tab ui-corner-top ui-state-default ui-tab" aria-controls="tabs-output" aria-labelledby="nav-tabs-output" aria-selected="false" aria-expanded="false"><a id="nav-tabs-output" href="https://wienerberger-hybris.ecx.local/hac/console/scripting#tabs-output" role="presentation" tabindex="-1" class="ui-tabs-anchor" style="font-weight: bold;">Output</a></li>
+						<li role="tab" tabindex="0" class="ui-tabs-tab ui-corner-top ui-state-default ui-tab ui-tabs-active ui-state-active" aria-controls="tabs-stacktrace" aria-labelledby="nav-tabs-stacktrace" aria-selected="true" aria-expanded="true"><a id="nav-tabs-stacktrace" href="https://wienerberger-hybris.ecx.local/hac/console/scripting#tabs-stacktrace" role="presentation" tabindex="-1" class="ui-tabs-anchor" style="font-weight: bold;">Stack trace</a></li>
+						<li role="tab" tabindex="-1" class="ui-tabs-tab ui-corner-top ui-state-default ui-tab" aria-controls="tabs-history" aria-labelledby="nav-tabs-history" aria-selected="false" aria-expanded="false"><a id="nav-tabs-history" href="https://wienerberger-hybris.ecx.local/hac/console/scripting#tabs-history" role="presentation" tabindex="-1" class="ui-tabs-anchor">History</a></li>
+				</ul>
+
+					<div id="tabs-edit" aria-labelledby="nav-tabs-edit" role="tabpanel" class="ui-tabs-panel ui-corner-bottom ui-widget-content" aria-hidden="true" style="display: none;">
+						<br>
+						<form action="https://wienerberger-hybris.ecx.local/hac/console/scripting/save" method="post">
+                            Script type: <select id="scriptType" name="scriptType">
+                                    
+                                        <option value="groovy">groovy</option>
+                                    
+                                        <option value="beanshell">beanshell</option>
+                                    
+                                        <option value="javascript">javascript</option>
+                                    
+                                
+                            </select>
+                            <input type="submit" value="Save" id="saveButton" style="float:right" data-executorurl="/hac/console/scripting/save">
+                            <div style="float: right;margin-right: 10px">code:<input type="text" id="code" name="code">
+
+                            </div>
+                            <div id="textarea-container" class="ui-resizable" style="height: 250px; width: 99%;">
+                                <div id="spinnerWrapper" style="display: none;">
+                                    <img id="spinner" src="./hybris administration console _ Scripting Languages Console_files/spinner.gif" alt="spinner">
+                                </div>
+                                <textarea id="script" name="script" style="display: none;">spring.beanDefinitionNames.each {
+    println it
+}
+return "Groovy Rocks!"</textarea><div class="CodeMirror cm-s-default"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 218px; left: 613.844px;"><textarea autocorrect="off" autocapitalize="off" style="position: absolute; padding: 0px; width: 1000px; height: 1em; outline: none;" tabindex="0"></textarea></div><div class="CodeMirror-hscrollbar" style="left: 29px; right: 15px; display: block;"><div style="height: 1px; width: 896px;"></div></div><div class="CodeMirror-vscrollbar" style="display: block; bottom: 15px;"><div style="width: 1px; height: 255px;"></div></div><div class="CodeMirror-scrollbar-filler" style="width: 15px; height: 15px; display: block;"></div><div class="CodeMirror-scroll" tabindex="-1" draggable="false"><div style="position: relative; min-height: 100%;"><div class="CodeMirror-sizer" style="min-width: 926.125px; margin-left: 29px; min-height: 255px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines"><div style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre style="text-align: left;"><span>x</span></pre></div><div style="position: relative; z-index: 1;"><div class="CodeMirror-selected" style="position: absolute; left: 4px; top: 234px; width: 888.844px; height: 13px;"></div><div class="CodeMirror-selected" style="position: absolute; left: 4px; top: 0px; width: 922px; height: 234px;"></div></div><div style=""><div style="position: relative;"><div style="position: absolute; left: 279px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">1</div></div><pre><span class="cm-keyword">import</span> <span class="cm-variable">at</span>.<span class="cm-property">wienerberger</span>.<span class="cm-property">wbportal</span>.<span class="cm-property">sapintegration</span>.<span class="cm-property">base</span>.<span class="cm-property">data</span>.<span class="cm-property">OrgData</span>;</pre></div><div style="position: relative;"><div style="position: absolute; left: 279px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">2</div></div><pre><span class="cm-keyword">import</span> <span class="cm-variable">at</span>.<span class="cm-property">wienerberger</span>.<span class="cm-property">wbportal</span>.<span class="cm-property">sapintegration</span>.<span class="cm-property">order</span>.<span class="cm-property">data</span>.<span class="cm-property">Order</span>;</pre></div><div style="position: relative;"><div style="position: absolute; left: 279px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">3</div></div><pre><span class="cm-keyword">import</span> <span class="cm-variable">at</span>.<span class="cm-property">wienerberger</span>.<span class="cm-property">wbportal</span>.<span class="cm-property">sapintegration</span>.<span class="cm-property">order</span>.<span class="cm-property">data</span>.<span class="cm-property">OrderEntry</span>;</pre></div><div style="position: relative;"><div style="position: absolute; left: 279px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">4</div></div><pre><span class="cm-keyword">import</span> <span class="cm-variable">at</span>.<span class="cm-property">wienerberger</span>.<span class="cm-property">wbportal</span>.<span class="cm-property">sapintegration</span>.<span class="cm-property">order</span>.<span class="cm-property">data</span>.<span class="cm-property">Partner</span>;</pre></div><div style="position: relative;"><div style="position: absolute; left: 279px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">5</div></div><pre>&nbsp;</pre></div><div style="position: relative;"><div style="position: absolute; left: 279px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">6</div></div><pre><span class="cm-keyword">import</span> <span class="cm-variable">java</span>.<span class="cm-property">util</span>.<span class="cm-property">Calendar</span>;</pre></div><div style="position: relative;"><div style="position: absolute; left: 279px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">7</div></div><pre><span class="cm-keyword">import</span> <span class="cm-variable">java</span>.<span class="cm-property">util</span>.<span class="cm-property">Collections</span>;</pre></div><div style="position: relative;"><div style="position: absolute; left: 279px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">8</div></div><pre><span class="cm-keyword">import</span> <span class="cm-variable">java</span>.<span class="cm-property">util</span>.<span class="cm-property">List</span>;</pre></div><div style="position: relative;"><div style="position: absolute; left: 279px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">9</div></div><pre>&nbsp;</pre></div><div style="position: relative;"><div style="position: absolute; left: 279px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">10</div></div><pre>   <span class="cm-keyword">final</span> <span class="cm-variable">Calendar</span> <span class="cm-variable">calendar</span> <span class="cm-operator">=</span> <span class="cm-variable">Calendar</span>.<span class="cm-property">getInstance</span>();</pre></div><div style="position: relative;"><div style="position: absolute; left: 279px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">11</div></div><pre>        <span class="cm-variable">calendar</span>.<span class="cm-property">set</span>(<span class="cm-number">2018</span>, <span class="cm-variable">Calendar</span>.<span class="cm-property">DECEMBER</span>, <span class="cm-number">14</span>);</pre></div><div style="position: relative;"><div style="position: absolute; left: 279px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">12</div></div><pre>&nbsp;</pre></div><div style="position: relative;"><div style="position: absolute; left: 279px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">13</div></div><pre>        <span class="cm-keyword">final</span> <span class="cm-variable">Partner</span> <span class="cm-variable">partner</span> <span class="cm-operator">=</span> <span class="cm-keyword">new</span> <span class="cm-variable">Partner</span>();</pre></div><div style="position: relative;"><div style="position: absolute; left: 279px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">14</div></div><pre>        <span class="cm-keyword">final</span> <span class="cm-variable">Address</span> <span class="cm-variable">address</span> <span class="cm-operator">=</span> <span class="cm-keyword">new</span> <span class="cm-variable">Address</span>();</pre></div><div style="position: relative;"><div style="position: absolute; left: 279px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">15</div></div><pre>        <span class="cm-variable">partner</span>.<span class="cm-property">setParvw</span>(<span class="cm-string">"AG"</span>);</pre></div><div style="position: relative;"><div style="position: absolute; left: 279px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">16</div></div><pre>        <span class="cm-variable">partner</span>.<span class="cm-property">setCustomerNumber</span>(<span class="cm-string">"231431"</span>);</pre></div><div style="position: relative;"><div style="position: absolute; left: 279px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">17</div></div><pre>        <span class="cm-variable">partner</span>.<span class="cm-property">setAddress</span>(<span class="cm-variable">address</span>);</pre></div><div style="position: relative;"><div style="position: absolute; left: 279px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">18</div></div><pre>&nbsp;</pre></div><div class="CodeMirror-activeline" style="position: relative;"><div style="position: absolute; left: 279px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">19</div></div><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><pre>        <span class="cm-keyword">final</span> <span class="cm-variable">Pdf</span> <span class="cm-variable">pdf</span> <span class="cm-operator">=</span> <span class="cm-variable">pdfClient</span>.<span class="cm-property">getPdf</span>(<span class="cm-variable">OrgData</span>.<span class="cm-property">GENERAL_SHALE</span>, <span class="cm-variable">partner</span>, <span class="cm-string">""</span>, <span class="cm-string">"0164735481"</span>, <span class="cm-variable">OutputPdfType</span>.<span class="cm-property">INVOICE</span>);</pre></div></div><div class="CodeMirror-cursor" style="left: 393.844px; top: 130px; height: 13px; display: none;">&nbsp;</div><div class="CodeMirror-cursor CodeMirror-secondarycursor" style="display: none;">&nbsp;</div></div></div></div></div><div style="position: absolute; height: 30px; width: 1px; top: 255px;"></div><div class="CodeMirror-gutters" style="left: 308px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 28px;"></div></div></div></div></div>
+                                <input type="hidden" name="_csrf" value="6cb16768-5389-4e25-91e7-d9a78d89e520">
+                            <div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 90;"></div></div>
+                        </form>
+
+                        <div id="modeWarningMsg">Rollback Mode: script results <strong>won't be persisted</strong> in database!</div>
+						<div id="buttons">
+							<div class="onoffswitch-large" style="float:left;margin-top:7px">
+							    <input type="checkbox" class="onoffswitch-checkbox" id="commitCheckbox">
+							    <label class="onoffswitch-label" for="commitCheckbox">
+							        <div class="onoffswitch-inner" _on="COMMIT" _off="ROLLBACK"></div>
+							        <div class="onoffswitch-switch-large"></div>
+							    </label>
+							</div>
+							<button id="executeButton" style="float:right" data-executorurl="/hac/console/scripting/execute">Execute</button>
+						</div>
+						<div style="clear:both"></div>
+					</div>
+
+					<div id="tabs-result" aria-labelledby="nav-tabs-result" role="tabpanel" class="ui-tabs-panel ui-corner-bottom ui-widget-content" aria-hidden="true" style="display: none;">
+                        <div class="executedModeMsg">Script was executed in a <strong>rollback mode</strong>. Results <strong>weren't persisted</strong> in the system!<hr></div>
+                        <pre id="result" class="hidden scrollable"></pre>
+					</div>
+
+					<div id="tabs-output" aria-labelledby="nav-tabs-output" role="tabpanel" class="ui-tabs-panel ui-corner-bottom ui-widget-content" aria-hidden="true" style="display: none;">
+                        <div class="executedModeMsg">Script was executed in a <strong>rollback mode</strong>. Results <strong>weren't persisted</strong> in the system!<hr></div>
+                        <pre id="output" class="hidden scrollable" style="display: none;"></pre>
+					</div>
+
+					<div id="tabs-stacktrace" aria-labelledby="nav-tabs-stacktrace" role="tabpanel" class="ui-tabs-panel ui-corner-bottom ui-widget-content" aria-hidden="false" style="">
+                        <div class="executedModeMsg">Script was executed in a <strong>rollback mode</strong>. Results <strong>weren't persisted</strong> in the system!<hr></div>
+                        <pre id="stacktrace" class="hidden scrollable" style="">Script compilation has failed [reason: org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+Script2.groovy: 14: unable to resolve class Address 
+ @ line 14, column 23.
+
+           final Address address = new Address();
+
+                         ^
+
+Script2.groovy: 14: unable to resolve class Address 
+ @ line 14, column 33.
+
+           final Address address = new Address();
+
+                                   ^
+
+Script2.groovy: 19: unable to resolve class Pdf 
+ @ line 19, column 19.
+
+           final Pdf pdf = pdfClient.getPdf(OrgData.GENERAL_SHALE, partner, "", "0164735481", OutputPdfType.INVOICE);
+
+                     ^
+
+3 errors
+]</pre>
+					</div>
+
+					<div id="tabs-history" cookiename="ScriptingShellHistory" historymax="15" cookiepath="/console/scripting/" aria-labelledby="nav-tabs-history" role="tabpanel" class="ui-tabs-panel ui-corner-bottom ui-widget-content" aria-hidden="true" style="display: none;">
+			      	<legend style="padding-left: 5px; padding-top: 10px; padding-bottom: 10px;" id="historyLegend">
+							<span>History</span>
+							<a href="https://wienerberger-hybris.ecx.local/hac/console/scripting#" id="clearHistory" style="font-size:75%">(clear)</a><br>
+							<span id="historyMax" style="color: red; font-weight: bold; font-size: 12px; display: none;">Maximum size of history achieved!</span>
+						</legend>
+						<ul id="historyList" style="margin:0"><li><a href="https://wienerberger-hybris.ecx.local/hac/console/scripting#">import at.wienerberger.wbportal.sapintegration....</a><a></a><br><em class="small">(17/12/2018 15:16:35)</em><div class="extendedHistoryItem" style="display: none;"><div style="float:left;width:90%;word-wrap:break-word">import at.wienerberger.wbportal.sapintegration.base.data.OrgData;
+import at.wienerberger.wbportal.sapintegration.order.data.Order;
+import at.wienerberger.wbportal.sapintegration.order.data.OrderEntry;
+import at.wienerberger.wbportal.sapintegration.order.data.Partner;
+
+import java.util.Calendar;
+import java.util.Collections;
+import java.util.List;
+
+final Calendar calendar = Calendar.getInstance();
+calendar.set(2018, Calendar.SEPTEMBER, 20);
+
+final Partner partner = new Partner();
+partner.setParvw("AG");
+partner.setCustomerNumber("308611");
+
+final Order argOrder = new Order();
+argOrder.setAuart("TA");
+argOrder.setInco1("PX");
+argOrder.setWishDelivDate(calendar.getTime());
+argOrder.setPriceDate(calendar.getTime());
+final List &lt; Partner &gt; partners = Collections.singletonList(partner);
+argOrder.setPartners(partners);
+
+final Order retOrder = orderClient.getOrderDetail(OrgData.TEST_COMPANY_1, partner, "0323512450");
+
+println("Auart" + retOrder.getAuart());
+println("Inco1:" + retOrder.getInco1());
+println("Bstkd:" + retOrder.getBstkd());
+println("PriceDate:" + retOrder.getPriceDate());
+println("Entries:" + retOrder.getEntries().size());
+println("Partners:" + retOrder.getPartners().size());<br><button>Insert</button></div><div style="float:right"><button class="deleteButton">X</button></div><div style="clear:both"></div></div></li><li><a href="https://wienerberger-hybris.ecx.local/hac/console/scripting#">import at.wienerberger.wbportal.sapintegration....</a><a></a><br><em class="small">(17/12/2018 15:21:36)</em><div class="extendedHistoryItem" style="display: none;"><div style="float:left;width:90%;word-wrap:break-word">import at.wienerberger.wbportal.sapintegration.base.data.OrgData;
+import at.wienerberger.wbportal.sapintegration.order.data.Order;
+import at.wienerberger.wbportal.sapintegration.order.data.OrderEntry;
+import at.wienerberger.wbportal.sapintegration.order.data.Partner;
+
+import java.util.Calendar;
+import java.util.Collections;
+import java.util.List;
+
+   final Calendar calendar = Calendar.getInstance();
+        calendar.set(2018, Calendar.DECEMBER, 14);
+
+        final Partner partner = new Partner();
+        final Address address = new Address();
+        partner.setParvw("AG");
+        partner.setCustomerNumber("231431");
+        partner.setAddress(address);
+
+        final Pdf pdf = pdfClient.getPdf(OrgData.GENERAL_SHALE, partner, "", "0164735481", OutputPdfType.INVOICE);<br><button>Insert</button></div><div style="float:right"><button class="deleteButton">X</button></div><div style="clear:both"></div></div></li></ul>
+					</div>
+                    <div id="tabs-browse" aria-labelledby="nav-tabs-browse" role="tabpanel" class="ui-tabs-panel ui-corner-bottom ui-widget-content" aria-hidden="true" style="display: none;">
+                        <script language="javascript">var zNodes = [{name: "Scripts Repository", open: true, children: [{name: "groovy", open: false, children: [{name: "disableRefundDeliveryCostIfRefundedBefore", icon: "/static/img/zTree/diy/2.png"},{name: "evalCustomRefundAmount", icon: "/static/img/zTree/diy/2.png"},{name: "evalOrigRefundAmount", icon: "/static/img/zTree/diy/2.png"},{name: "BRICK-54_TestEndpoint.groovy", icon: "/static/img/zTree/diy/2.png"}]},{name: "beanshell", open: false},{name: "javascript", open: false}]}];</script>
+                        <ul id="treeDemo" class="ztree"><li id="treeDemo_1" class="level0" tabindex="0" hidefocus="true" treenode=""><span id="treeDemo_1_switch" title="" class="button level0 switch root_open" treenode_switch=""></span><a id="treeDemo_1_a" class="level0" treenode_a="" onclick="" target="_blank" style="" title="Scripts Repository"><span id="treeDemo_1_ico" title="" treenode_ico="" class="button ico_open" style=""></span><span id="treeDemo_1_span" class="node_name">Scripts Repository</span></a><ul id="treeDemo_1_ul" class="level0 " style="display:block"><li id="treeDemo_2" class="level1" tabindex="0" hidefocus="true" treenode=""><span id="treeDemo_2_switch" title="" class="button level1 switch center_close" treenode_switch=""></span><a id="treeDemo_2_a" class="level1" treenode_a="" onclick="" target="_blank" style="" title="groovy"><span id="treeDemo_2_ico" title="" treenode_ico="" class="button ico_close" style=""></span><span id="treeDemo_2_span" class="node_name">groovy</span></a></li><li id="treeDemo_7" class="level1" tabindex="0" hidefocus="true" treenode=""><span id="treeDemo_7_switch" title="" class="button level1 switch center_docu" treenode_switch=""></span><a id="treeDemo_7_a" class="level1" treenode_a="" onclick="" target="_blank" style="" title="beanshell"><span id="treeDemo_7_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeDemo_7_span" class="node_name">beanshell</span></a></li><li id="treeDemo_8" class="level1" tabindex="0" hidefocus="true" treenode=""><span id="treeDemo_8_switch" title="" class="button level1 switch bottom_docu" treenode_switch=""></span><a id="treeDemo_8_a" class="level1" treenode_a="" onclick="" target="_blank" style="" title="javascript"><span id="treeDemo_8_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeDemo_8_span" class="node_name">javascript</span></a></li></ul></li></ul>
+                        <br><hr>
+                        Import Script File<br>
+                        
+                        <form id="scriptFileFormData" action="https://wienerberger-hybris.ecx.local/hac/console/scripting/upload" method="post" enctype="multipart/form-data">
+                            
+                                <div class="fileInput"><input type="file" name="file" class="file" id="file"><div class="fakeFile button">Choose file</div><input type="text" class="fakeFileName"></div>
+
+                            
+                            <table>
+                                <tbody><tr>
+                                    <td>Name:</td>
+                                    <td><input id="name" name="name" type="text" value="" size="25"></td>
+                                </tr>
+                                <tr>
+                                    <td>Type:</td>
+                                    <td><select id="type" name="type">
+                                        
+                                            <option value="groovy">groovy</option>
+                                        
+                                            <option value="beanshell">beanshell</option>
+                                        
+                                            <option value="javascript">javascript</option>
+                                        
+                                    </select></td>
+                                </tr>
+                            </tbody></table>
+							<input type="hidden" name="_csrf" value="6cb16768-5389-4e25-91e7-d9a78d89e520">
+                            <input type="submit" value="Import file">
+                        <div>
+<input type="hidden" name="_csrf" value="6cb16768-5389-4e25-91e7-d9a78d89e520">
+</div></form>
+                    </div>
+				</div>
+			</div>
+		</div>
+		<div class="span-6 last" id="sidebar">
+			<div class="prepend-top" id="recent-reviews">
+				<h3 class="caps">
+					Page description
+				</h3>
+				<div class="box">
+					<div class="quiet">
+					 This page provides the Scripting Languages console. It comes with implicit variables:<br><br>
+						<ul>
+							<li><strong>spring</strong> - Spring ApplicationContext</li>
+							<li><strong>out</strong> - Standard Output Stream</li>
+						</ul>
+						<hr>
+						<strong>Browse</strong> tab: Allows you to browse, upload or delete scripts stored in the script repository.<br><br>
+						<strong>Result</strong> tab: Displays results for the executed script. You can return a result using the <strong>return</strong> keyword. If the result is in a <strong>String</strong>, then you can read it directly. For all other objects the <strong>toString()</strong> method is called and the result is displayed.<br><br>
+						<strong>Output</strong> tab: Displays a string if the script uses a method to display text. During script execution all output to <strong>System.out</strong> is redirected and shows up in this tab. The implicit variable <strong>out</strong> is available and is of <strong>PrintStream</strong> type.<br><br>
+						<strong>Stacktrace</strong> tab: Displays the stack trace for the corrupted script.  <br><br>
+						<strong>History</strong> tab: Displays the local script history and the timestamp of the last execution.  <br><br>
+					</div>
+				</div>
+                <h3 class="caps">Hybris Help</h3>
+                <div class="box">
+                    <ul>
+                        <li><a href="https://help.hybris.com/1808/hcd/8bec04a386691014938a9996a977d07f.html" target="_blank" class="quiet">Scripting</a></li>
+                    </ul>
+                </div>
+			</div>
+		</div>
+        <div id="rMenu">
+            <ul>
+                <li id="reloadButton">Reload Scripts</li>
+                <li id="loadButton" data-executorurl="/hac/console/scripting/load">Load Script</li>
+                <li id="deleteButton" data-executorurl="/hac/console/scripting/delete">Delete Script</li>
+            </ul>
+
+        </div>
+	
+	<!-- end page content -->
+</div>
+
+<footer>
+	<a id="about" data-abouturl="/hac/platform/about" href="https://wienerberger-hybris.ecx.local/hac/console/scripting#">© SAP SE,
+		<script type="text/javascript">document.write(new Date().getFullYear())</script>2018
+	</a>
+</footer>
+
+<div id="aboutContainer"></div>
+
+<ul id="ui-id-1" tabindex="0" class="ui-menu ui-widget ui-widget-content ui-autocomplete ui-front" style="display: none;"></ul><div role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div></body></html>

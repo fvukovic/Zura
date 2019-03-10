@@ -26,10 +26,7 @@ angular.module('starter')
             //     window.localStorage.setItem("start", +window.localStorage.getItem("start") + 5);
             //     callApi();
             // }
-        });
-
-        //Log in to the event
- 
+        }); 
  
         /* Function for redirect to detailed page for the news by ID */
         $scope.viewNews = function (id) {

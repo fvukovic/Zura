@@ -1,0 +1,12 @@
+<ion-view style="height: 170px; margin-top: -75px; width: 100%;">
+    <ion-content data-tap-disabled="true" scroll="false" style="top: 0;">
+        <h1 style="background-color:#A23A85" class="popup-title">{{popup.title}}
+        </h1>
+        <div ng-bind-html="popup.text" style="padding: 10px; color:#0b1628"></div>
+
+        <div class="popup-wrap">
+            <a ng-click="closePopUp()" style="background:#A23A85" ng-click="addFavorits()" class="btn-primary">ZATVORI</a> 
+        </div>
+    </ion-content>
+</ion-view>
+ 
