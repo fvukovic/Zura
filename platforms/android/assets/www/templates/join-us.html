@@ -23,9 +23,10 @@
         <input type="text" ng-model="mail" id="mail" style="height: 35px;width: 100%"/><br/> 
         Poruka:
         <input type="text" ng-model="poruka"  id="poruka" style="height: 100px;width: 100%"/><br/> 
-        <div ng-click="privacy==true ? privacy = false : privacy = true" style="background-color:#f0f0f0" > <input type="checkbox" ng-model="privacy" style="margin:5px;" id="privacy"/>
-          Prihvaćam pohranjivanje moje e-mail adrese za primanje obavijesti o aktivnostima Freezure i narednih događaja putem elektroničke pošte.<br><a ng-click="openPrivacyPopup">Saznaj više u Pravilima privatnosti</a>
-        </div><br/><br/> 
+        <div ng-click="privacy==true ? privacy = false : privacy = true" style="background-color:#f0f0f0" > <input type="checkbox" ng-model="privacy" id ="privacy" style="margin:5px;" >
+          Prihvaćam pohranjivanje moje e-mail adrese za primanje obavijesti o aktivnostima Freezure i narednih događaja putem elektroničke pošte.  </div><br/>
+          <a ng-click="openPrivacyPopup()">Saznaj više u Pravilima privatnosti</a>
+      <br/><br/> 
         <a ng-click="joinUs()" class="btn-primary" style="background-color: #A23A85; "> <span  ng-style="{'font-size' : +font + +5 + 'px'} ">Pošalji</span></a><br/><br/><br/><br/>
         <br/><br/>  </div>  
       <div style="background-color: white;padding-top:120px" ng-include src="'templates/footer-copyright-eu.html'"></div> 

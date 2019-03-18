@@ -21,7 +21,7 @@ angular.module('starter')
 
         } 
 
-        $scope.sendMessage = function(){  $ionicLoading.show({ template: 'Poruka je poslana! ', noBackdrop: true, duration: 3000 }); 
+        $scope.sendMessage = function(){  
             const ime = document.getElementById("ime");
             const prezime = document.getElementById("prezime");
             const lozinka = document.getElementById("lozinka"); 
@@ -40,9 +40,8 @@ angular.module('starter')
             $ionicLoading.show({ template: 'Niste popunili sva potrebna polja! ', noBackdrop: true, duration: 3000 });
         }
     
-            request.success(function (data) { 
-                alert(data)
-                $ionicLoading.show({ template: 'Poruka je poslana! ', noBackdrop: true, duration: 3000 });
+            request.success(function (data) {   
+                $ionicLoading.show({ template:data, noBackdrop: true, duration: 3000 });
             });
         }
        

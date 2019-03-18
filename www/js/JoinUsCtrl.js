@@ -1,5 +1,5 @@
 angular.module('starter')
-  .controller('JoinUsCtrl', function ($scope, $ionicLoading, $stateParams, $ionicLoading,$ionicPopup, $ionicPlatform, $http, $state, $ionicPopup, $filter, $cordovaSQLite, $cordovaGeolocation, $cordovaSocialSharing, ionicTimePicker, ionicDatePicker, $cordovaLocalNotification) {
+  .controller('JoinUsCtrl', function ($scope, $ionicLoading, $stateParams,$ionicLoading, $ionicLoading,$ionicPopup, $ionicPlatform, $http, $state, $ionicPopup, $filter, $cordovaSQLite, $cordovaGeolocation, $cordovaSocialSharing, ionicTimePicker, ionicDatePicker, $cordovaLocalNotification) {
 
     $ionicPlatform.ready(function () { 
       callApi();
@@ -32,7 +32,7 @@ angular.module('starter')
 
       }
 
-      $scope.openPrivacyPopup = function(){ 
+      $scope.openPrivacyPopup = function(){  
           $scope.popUp = $ionicPopup.show({
               templateUrl: 'templates/privacy-popup.html',
               controller: this,
@@ -44,6 +44,13 @@ angular.module('starter')
     }
 
       $scope.joinUs = function () {
+
+        var ime = document.getElementById("privacy").checked; 
+        if (ime == false) { 
+          alert("Niste prihvali pravila privatnosti!")
+          return;
+        }
+
         var ime = document.getElementById("ime").value;
         if (ime == "") {
           ime = ime
@@ -104,8 +111,8 @@ angular.module('starter')
 
         });
 
-        request.success(function (data) {
-            alert(data)
+        request.success(function (data) { 
+          $ionicLoading.show({ template:data, noBackdrop: true, duration: 3000 });
         });
       }
     });

@@ -30,15 +30,15 @@ angular.module('starter')
             data:{id:$stateParams.newsId}
 
         });
-        request.success(function (data) {
-          
+        request.success(function (data) { 
+            alert(JSON.stringify(data))
             $scope.vijest = data[0]; 
             if($scope.vijest.category == 1){
-                $scope.title = "Najave događanja"
+                $scope.title = "Radionice"
             }else if($scope.vijest.category == 2){
                 $scope.title = "Vijesti"   
             }else if($scope.vijest.category == 3){
-                $scope.title = "Volonterske priče" 
+                $scope.title = "Freezura preporučuje" 
              }
 
             var request = $http({
